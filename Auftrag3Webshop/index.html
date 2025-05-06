@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mein Webshop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link" class="active">Home</a></li>
+                <li><a href="index.html">Produkte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#" id="warenkorb-link">Warenkorb <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home-page" class="active">
+        <div class="hero">
+            <h2>Willkommen bei deinem Fussballschuh-Experten</h2>
+            <p>Entdecke die neuesten Modelle von adidas und Nike für optimale Leistung auf dem Platz</p>
+        </div>
+
+        <div class="newsletter-section">
+            <h3>Newsletter abonnieren</h3>
+            <p>Erhalte die neuesten Angebote und Produktneuheiten direkt in dein Postfach!</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="Deine E-Mail-Adresse" required>
+                <button type="submit">Abonnieren</button>
+            </form>
+            <div id="newsletter-success" class="newsletter-success" style="display: none;">
+                Vielen Dank für dein Abonnement!
+            </div>
+        </div>
+        
+        <main>
+            <div class="kategorie-filter">
+                <h3>Kategorien</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    <button class="filter-btn" data-filter="adidas">adidas</button>
+                    <button class="filter-btn" data-filter="nike">Nike</button>
+                </div>
+                <div class="preis-filter">
+                    <h3>Preis</h3>
+                    <button class="filter-btn" data-filter="unter320">Unter CHF 320</button>
+                    <button class="filter-btn" data-filter="ueber320">CHF 320 und mehr</button>
+                </div>
+            </div>
+            
+            <section class="produkte">
+                <article class="produkt" data-id="1" data-kategorie="adidas" data-preis="339.95">
+                    <a href="produkt.html?id=1">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/92/2e/9e/1744695310/adidas-predator-elite-ft-fg-silber-ih0894-fussballschuh-right-out.png" alt="Produkt 1">
+                        <h2>adidas Predator Elite FT FG Jude Bellingham Signature Silber</h2>
+                        <p>CHF 339.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="2" data-kategorie="adidas" data-preis="309.95">
+                    <a href="produkt.html?id=2">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/11/74/c3/1729098765/adidas-predator-elite-fg-weiss-schwarz-id0698-fussballschuh-right-out.png" alt="Prodkut 2">
+                        <h2>adidas Predator Elite FG Jude Bellingham Weiss</h2>
+                        <p>CHF 309.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="3" data-kategorie="adidas" data-preis="329.95">
+                    <a href="produkt.html?id=3">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/01/69/ab/1742382011/adidas-predator-elite-ft-fg-weiss-jp5730-fussballschuh-right-out.png" alt="Produkt 3">
+                        <h2>adidas Predator Elite FT FG Teamgeist Weiss</h2>
+                        <p>CHF 329.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="4" data-kategorie="adidas" data-preis="319.95">
+                    <a href="produkt.html?id=4">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/36/73/e5/1742998586/adidas-f50-fg-blau-ie1250-fussballschuh-right-out.png" alt="Produkt 4">
+                        <h2>adidas F50 Elite LL FG Celestial Victory Blau</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="5" data-kategorie="adidas" data-preis="319.95">
+                    <a href="produkt.html?id=5">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/7e/fe/26/1736401800/adidas-f50-elite-ll-fg-weiss-ie1214-fussballschuh-right-out.png" alt="Produkt 5">
+                        <h2>adidas F50 Elite LL FG Pure Victory Weiss</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="6" data-kategorie="adidas" data-preis="319.95">
+                    <a href="produkt.html?id=6">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/45/ec/d4/1740638480/adidas-f50-elite-ll-fg-pink-ie1212-fussballschuh-right-out.png" alt="Produkt 6">
+                        <h2>adidas F50 Elite LL FG Mystic Victory Rosa</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="7" data-kategorie="adidas" data-preis="319.95">
+                    <a href="produkt.html?id=7">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/0e/8d/00/1738221347/adidas-f50-elite-ll-fg-weiss-ie1216-fussballschuh-right-out.png" alt="Produkt 7">
+                        <h2>adidas F50 Elite LL FG Polar Victory Weiss</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="8" data-kategorie="adidas" data-preis="319.95">
+                    <a href="produkt.html?id=8">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=1400/ch-de/media/a4/f6/e1/1737618261/adidas-f50-elite-ll-fg-schwarz-ie1215-fussballschuh-right-out.png" alt="Produkt 8">
+                        <h2>adidas F50 Elite LL FG Stealth Victory Schwarz</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="9" data-kategorie="nike" data-preis="319.95">
+                    <a href="produkt.html?id=9">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/80/42/28/1741590775/nike-phantom-gx-ii-elite-fg-weiss-f100-hv4890-fussballschuh-right-out.png" alt="Produkt 9">
+                        <h2>Nike Phantom GX II Elite FG Chromatic Weiss F100</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="10" data-kategorie="nike" data-preis="329.95">
+                    <a href="produkt.html?id=10">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/34/c5/d3/1741588511/nike-jr-air-zoom-mercurial-vapor-elite-fg-weiss-hv4887-fussballschuh-right-out.png" alt="Produkt 10">
+                        <h2>Nike Air Zoom Mercurial Vapor Elite FG Chromatic Weiss F100</h2>
+                        <p>CHF 329.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="11" data-kategorie="nike" data-preis="329.95">
+                    <a href="produkt.html?id=11">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/95/4a/31/1738737911/nike-air-zoom-mercurial-vapor-xvi-elite-fg-f500-hf1605-fussballschuh-right-out.png" alt="Produkt 11">
+                        <h2>Nike Air Zoom Mercurial Vapor XVI Elite FG United Lila F500</h2>
+                        <p>CHF 329.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+                <article class="produkt" data-id="12" data-kategorie="nike" data-preis="319.95">
+                    <a href="produkt.html?id=12">
+                        <img src="https://www.11teamsports.com/cdn-cgi/image/format=webp,width=601/ch-de/media/c5/37/7c/1728878811/nike-air-zoom-mercurial-vapor-xvi-elite-fg-f700-fq1457-fussballschuh-right-out.png" alt="Produkt 12">
+                        <h2>Nike Air Zoom Mercurial Vapor XVI Elite FG Gelb Mad Voltage Gelb Schwarz F700</h2>
+                        <p>CHF 319.95* UVP</p>
+                    </a>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </article>
+            </section>
+        </main>
+    </div>
+    
+    <div id="warenkorb-page">
+        <div id="warenkorb-container">
+            <h1>Dein Warenkorb</h1>
+            <div id="warenkorb-items">
+            </div>
+            <div class="gesamtsumme">Gesamtsumme: <span id="gesamt-betrag">CHF 0.00</span></div>
+            <button class="checkout-button">Zur Kasse</button>
+            <div style="clear:both"></div>
+            <a href="#" class="back-to-shop" id="back-to-shop">← Zurück zum Shop</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mein Webshop - Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
