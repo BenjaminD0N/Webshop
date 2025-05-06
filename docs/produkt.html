@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktdetails - Mein Webshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mein Webshop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Produkte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#" id="warenkorb-link">Warenkorb <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="produkt-details">
+        <div class="produkt-bild">
+            <img id="produkt-bild" src="" alt="Produktbild">
+        </div>
+        <div class="produkt-info">
+            <h1 id="produkt-name"></h1>
+            <div id="produkt-preis" class="produkt-preis"></div>
+            
+            <div class="produkt-beschreibung">
+                <p>Diese hochwertigen Fussballschuhe bieten optimalen Halt und Komfort für maximale Leistung auf dem Platz. Mit innovativer Technologie für präzise Ballkontrolle und verbesserten Grip.</p>
+                <ul>
+                    <li>Hochwertige Materialien für lange Haltbarkeit</li>
+                    <li>Optimale Passform für verbesserten Komfort</li>
+                    <li>Innovative Stollenkonfiguration für guten Halt auf natürlichem Rasen</li>
+                    <li>Leichtes Design für hohe Geschwindigkeit</li>
+                </ul>
+            </div>
+            
+            <div class="groessen">
+                <h3>Verfügbare Grössen</h3>
+                <div>
+                    <div class="groessen-option">38</div>
+                    <div class="groessen-option">39</div>
+                    <div class="groessen-option">40</div>
+                    <div class="groessen-option">41</div>
+                    <div class="groessen-option">42</div>
+                    <div class="groessen-option">43</div>
+                    <div class="groessen-option">44</div>
+                    <div class="groessen-option">45</div>
+                </div>
+            </div>
+            
+            <div class="produkt-actions">
+                <div class="menge-steuerung">
+                    <button class="minus-btn">-</button>
+                    <span id="menge-anzahl">1</span>
+                    <button class="plus-btn">+</button>
+                </div>
+                <button id="add-to-cart-detail" class="add-to-cart-detail">In den Warenkorb</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="aehnliche-produkte">
+        <h2>Ähnliche Produkte</h2>
+        <div id="aehnliche-produkte-container" class="aehnliche-produkte-container">
+            <!-- Ähnliche Produkte werden per JavaScript eingefügt -->
+        </div>
+    </div>
+    
+    <div id="warenkorb-page">
+        <div id="warenkorb-container">
+            <h1>Dein Warenkorb</h1>
+            <div id="warenkorb-items">
+            </div>
+            <div class="gesamtsumme">Gesamtsumme: <span id="gesamt-betrag">CHF 0.00</span></div>
+            <button class="checkout-button">Zur Kasse</button>
+            <div style="clear:both"></div>
+            <a href="#" class="back-to-shop" id="back-to-shop">← Zurück zum Shop</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mein Webshop - Alle Rechte vorbehalten</p>
+        <div class="footer-links">
+            <a href="#">Impressum</a> | 
+            <a href="#">Datenschutz</a> | 
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
